@@ -1,3 +1,12 @@
+/*-----
+Utils
+-----*/
+/*-----
+Colors
+-----*/
+/*-----
+Base
+-----*/
 /*-------
 Reset CSS
 -------*/
@@ -8,4 +17,92 @@ Reset CSS
 
 html {
   font-size: 16pt;
+}
+
+/*-----
+Pages
+-----*/
+.title {
+  color: #7c925e;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em 0 0 0;
+}
+
+.navContainer {
+  display: flex;
+  margin: 0 1em;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1em 1em 1em;
+}
+.navContainer__navBar ul {
+  display: flex;
+  list-style: none;
+  width: 90%;
+  margin: 1em;
+}
+.navContainer__navBar a {
+  text-decoration: none;
+  color: #6d6d6d;
+  padding: 1em;
+}
+.navContainer__icons {
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+}
+.navContainer__icons img {
+  width: 50px;
+  height: 50px;
+}
+
+.annonce {
+  background-color: #ebe2d7;
+  color: #7c925e;
+  text-align: center;
+  padding: 1em;
+}
+
+.separator {
+  width: 100%;
+  height: 0.15em;
+  background-color: #6d6d6d;
+  border: 1px solid black;
+}
+
+main {
+  display: flex;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+.infoContainer__title {
+  color: #7c925e;
+}
+.infoContainer__title img {
+  width: 75%;
+}
+.infoContainer__article {
+  width: 100%;
+  background-color: #ebe2d7;
+}
+
+.articleContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.articleContainer__article {
+  color: #6d6d6d;
+}
+.articleContainer__article h2 {
+  color: #7c925e;
+}
+.articleContainer__article img {
+  max-width: 200px;
 }/*# sourceMappingURL=main.css.map */

@@ -4,17 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./src/sass/main.css">
 </head>
 <body>
     <header>
+        <div class="annonce">
+            <p>Attention: En raison de la situation liée au Covid, les délais de livraisons peuvent varier entre 3 jours et 3 semaines.</p>
+        </div>
+        <h1 class="title">Chill'Us</h1>
+        <div class="navContainer">
+            <nav class="navContainer__navBar">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Notre Plaid</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="navContainer__icons">
+                <img src="src/img/icon_compte.png" alt="Icone Utilisateur">
+                <img src="src/img/icon_panier.png" alt="Icone Panier">
+            </div>
+        </div>
+        <div class="separator">
+        </div>
     </header>
 
     <main>
-
+        <div class="infoContainer">
+            <div class="infoContainer__title">
+                <h2>L'automne est là, et l'Hivers vient</h2>
+                <img src="src/img/Image_accueil.jpg" alt="">
+            </div>
+            <div class="infoContainer__article">
+                <p>L’Eté n’est plus. Les températures baissent. On ressort les couettes. C’est l’occasion idéale pour s’emmitoufler et se sentir comme dans un cocon. Après une journée de travail, une journée de grisaille, qu’il est bon se détendre, seul, à deux ou plusieurs, blotti dans un plaid, à lire ou créer, avec une bonne tasse de thé ou de chocolat chaud. En un mot : se détendre, tranquille, à l’aise, confortablement installé dans sa bulle. Ainsi trouverez-vous dans notre boutique de quoi vous accompagner dans votre moment de relaxation. Alors tamisons la lumière, diffusons quelques huiles aromatiques, prenons une bonne tasse, et Chillons ensemble.</p>
+            </div>
+        </div>
+        
+        <div class="articleContainer">
+            <div class="articleContainer__article">
+                <h2>Titre article</h2>
+                <img src="src/img/carnet.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur ad, cumque consectetur magni molestias ipsum, quidem distinctio temporibus minima animi itaque ipsa. Aliquam illo vitae dignissimos maxime magnam non ducimus.</p>
+            </div>
+            <div class="articleContainer__article">
+                <h2>Titre article</h2>
+                <img src="src/img/fondu.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quam. Labore, ea nobis. Dolores laboriosam, quasi, quas quaerat vel ab rem in consectetur, nobis et veniam. Vero voluptatum iste sint!</p>
+            </div>
+            <div class="articleContainer__article">
+                <h2>Titre article</h2>
+                <img src="src/img/mug.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nulla facere consequatur facilis sint veritatis laborum, molestias aliquid nemo vitae asperiores eaque quibusdam unde quia reiciendis ad aliquam alias ex!</p>
+            </div>
+            <div class="articleContainer__article">
+                <h2>Titre article</h2>
+                <img src="src/img/service_the.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus, ipsum ratione quae doloribus odit, iste minima at explicabo ullam illo. Hic at aliquam velit commodi doloremque repellendus itaque eaque.</p>
+            </div>
+        </div>
     </main>
 
     <footer>
-
+        <div class="formContainer">
+            <fieldset class="formContainer__fieldSet">
+                <legend class="formContainer__legend">Contactez-Nous</legend>
+                <form action="#" method="post" class="formContainer__form">
+                    <input type="text" name="lastname" id="lastname" placeholder="Nom" class="formContainer__input">
+                    <input type="text" name="firstname" id="firstname" placeholder="Prénom" class="formContainer__input">
+                    <input type="email" name="email" id="email" placeholder="Mail" class="formContainer__input">
+                    <textarea name="message" id="message" class="formContainer_textArea"></textarea>
+                    <input type="button" value="Envoyer" class="btn">
+                </form>
+            </fieldset>
+        </div>
     </footer>
 
 </body>

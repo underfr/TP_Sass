@@ -1,0 +1,35 @@
+@use '../utils/loader' as *;
+
+main {
+    display: flex;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    &__title{
+        color: $green-color;
+    }
+    &__title img {
+        width: 75%;
+    }
+    &__article {
+        width: 100%;
+        background-color: $background;
+    }
+}
+
+.articleContainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    &__article {
+        color: $grey-color;
+    }
+    &__article h2 {
+        color: $green-color
+    }
+    &__article img {
+        max-width: 200px;
+    }
+}
