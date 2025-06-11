@@ -5,6 +5,21 @@ Utils
 Colors
 -----*/
 /*-----
+Utils
+-----*/
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7c925e;
+}
+
+.separator {
+  height: 0.15em;
+  background-color: #6d6d6d;
+  border: 1px solid black;
+}
+
+/*-----
 Base
 -----*/
 /*-------
@@ -30,16 +45,16 @@ body {
 Pages
 -----*/
 .title {
-  color: #7c925e;
   width: 100%;
-  display: flex;
-  padding: 1em 0 0 0;
   grid-column: 2;
   grid-row: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navContainer {
-  grid-column: 2/4;
+  grid-column: 2/span 4;
   grid-row: 3;
   display: flex;
   justify-content: space-between;
@@ -58,12 +73,14 @@ Pages
 }
 .navContainer__icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   width: 10%;
 }
 .navContainer__icons img {
   width: 50px;
   height: 50px;
+  display: block;
   margin-right: 1em;
 }
 
@@ -73,20 +90,18 @@ Pages
   text-align: center;
   align-self: center;
   padding: 1em;
-  grid-column: 1/5;
+  grid-column: 1/span 5;
   grid-row: 1;
 }
 
 .separator {
-  height: 0.15em;
-  background-color: #6d6d6d;
-  border: 1px solid black;
-  grid-column: 1/5;
+  grid-column: 1/span 5;
   grid-row: 4;
 }
 
 header {
-  grid-column: 1/5;
+  grid-column: 1/span 5;
+  grid-row: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 1fr 1fr 1fr;

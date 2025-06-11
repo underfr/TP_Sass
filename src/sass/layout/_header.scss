@@ -1,23 +1,21 @@
 @use '../utils/loader' as *;
+
 .annonce {
     background-color: $background;
     color: $green-color;
     text-align: center;
     align-self: center;
-    padding: 1em;
-    grid-column: 1/5;
-    grid-row: 1;
+    @include pad-1em;
+    @include grid-position(1/span 5, 1);
 }
+
 .separator {
-    height: 0.15em;
-    background-color: $grey-color;
-    border: 1px solid black;
-    grid-column: 1/5;
-    grid-row: 4;
+    @extend %separator;
+    @include grid-position(1/span 5, 4);
 }
 
 header {
-    grid-column: 1/5;
+    @include grid-position(1/span 5, auto);
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto 1fr 1fr 1fr;

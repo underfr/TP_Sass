@@ -1,0 +1,20 @@
+@mixin grid-position($column, $row) {
+  grid-column: $column;
+  grid-row: $row;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin img-size($w: 100%, $h: auto) {
+  width: $w;
+  height: $h;
+  display: block;
+}
+
+@mixin pad-1em {
+  padding: 1em;
+}
