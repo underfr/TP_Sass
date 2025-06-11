@@ -3,26 +3,26 @@
     color: $green-color;
     width: 100%;
     display: flex;
-    justify-content: space-around;
     padding: 1em 0 0 0;
+    grid-column: 2;
+    grid-row: 2;
 }
 .navContainer {
+    grid-column: 2/4;
+    grid-row: 3;
     display: flex;
-    margin: 0 1em;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 1em 1em 1em;
+    padding-bottom: 1em;
     &__navBar ul{
         display: flex;
         list-style: none;
-        width: 90%;
-        margin: 1em;
+        width: 100%;
     }
     &__navBar a {
         text-decoration: none;
         color: $grey-color;
-        padding: 1em;
+        margin-right: 1em;
     }
     &__icons {
         display: flex;
@@ -32,5 +32,6 @@
     &__icons img{
         width: 50px;
         height: 50px;
+        margin-right: 1em;
     }
 }
